@@ -17,14 +17,21 @@ export default function River() {
         }}
       />
 
-      {/* Finish Line */}
+      {/* Finish Pole with Card */}
       <div
-        className="absolute bottom-0 w-3 bg-white/80 border-x-4 border-red-600 h-[20vh]"
-        style={{ left: finishLine - 940 + "vh" }}
+        className="absolute bottom-0 flex flex-col items-center"
+        style={{ left: finishLine - 950 + "vh" }}
       >
-        <div className="absolute top-4 -left-6 rotate-90 text-white font-bold">
+        {/* FINISH Card */}
+        <div
+          className="mb-2 px-6 py-2 bg-red-600 text-white font-extrabold 
+                  tracking-widest rounded-md shadow-xl border-4 border-white"
+        >
           FINISH
         </div>
+
+        {/* Pole */}
+        <div className="w-2 h-[28vh] bg-gradient-to-b from-orange-200 to-gray-600 rounded-full shadow-lg" />
       </div>
 
       {/* Boats */}
