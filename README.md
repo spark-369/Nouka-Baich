@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nouka Baich
 
-## Getting Started
+A rhythm-based boat racing game built with Next.js and React.
 
-First, run the development server:
+## Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Nouka Baich is an exciting rhythm game where players control a boat by timing their inputs to drum beats. Race against an AI opponent while maintaining stamina and building combos to achieve the highest score.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- Rhythm-based gameplay with drum beats
+- Three difficulty levels: Easy, Normal, Hard
+- Real-time scoring with combo multipliers
+- Stamina management system
+- Local leaderboard
+- Pause functionality
+- Touch and keyboard controls
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Play
 
-## Learn More
+- Press SPACE or tap the screen on the drum beat to accelerate your boat
+- Maintain your stamina by hitting beats accurately
+- Build combos for higher scores
+- Race for 60 seconds against the AI
+- Avoid running out of stamina
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Run the development server: `npm run dev`
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Technologies Used
 
-## Deploy on Vercel
+- Next.js 16
+- React 19
+- Tailwind CSS 4
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+
+## Project Structure
+
+- `components/` - React components for UI elements
+- `context/` - Game state management
+- `utils/` - Utility functions
+- `public/` - Static assets (audio, images)
+
+## Contributing
+
+This project is private and not open for contributions.
