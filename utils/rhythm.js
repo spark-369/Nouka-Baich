@@ -1,1 +1,1 @@
-export const isPerfectHit = (now, beat) => Math.abs(now - beat) < 120;
+export const isPerfectHit = (now, beat) => Math.abs(now - beat) < 250;
