@@ -5,9 +5,9 @@ const GameContext = createContext();
 export const useGame = () => useContext(GameContext);
 
 const DIFFICULTY = {
-  easy: { beat: 900, ai: 0.3 },
-  normal: { beat: 750, ai: 0.6 },
-  hard: { beat: 600, ai: 0.9 },
+  easy: { beat: 900, ai: 0.6 },
+  normal: { beat: 750, ai: 1.2 },
+  hard: { beat: 600, ai: 1.8 },
 };
 
 export const GameProvider = ({ children }) => {
@@ -80,7 +80,7 @@ export const GameProvider = ({ children }) => {
 
     const aiTimer = setInterval(() => {
       setAiProgress((p) => Math.min(p + DIFFICULTY[difficulty].ai, 1100));
-    }, 15);
+    }, 50);
 
     return () => clearInterval(aiTimer);
   }, [started, paused, gameOver, difficulty]);
