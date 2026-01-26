@@ -20,7 +20,7 @@ export default function River() {
       {/* Finish Line */}
       <div
         className="absolute bottom-0 w-3 bg-white/80 border-x-4 border-red-600 h-[20vh]"
-        style={{ left: finishLine }}
+        style={{ left: finishLine - 940 + "vh" }}
       >
         <div className="absolute top-4 -left-6 rotate-90 text-white font-bold">
           FINISH
