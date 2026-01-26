@@ -45,7 +45,7 @@ export const GameProvider = ({ children }) => {
   const missBeat = () => {
     if (paused || gameOver) return;
     setSpeed((s) => Math.max(s - 0.2, 0));
-    setStamina((s) => Math.max(s - 6, 0));
+    setStamina((s) => Math.max(s - 3, 0));
     setCombo(0);
   };
 
