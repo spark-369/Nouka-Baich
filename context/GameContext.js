@@ -80,7 +80,7 @@ export const GameProvider = ({ children }) => {
 
     const aiTimer = setInterval(() => {
       setAiProgress((p) => Math.min(p + DIFFICULTY[difficulty].ai, 1100));
-    }, 20);
+    }, 18);
 
     return () => clearInterval(aiTimer);
   }, [started, paused, gameOver, difficulty]);
