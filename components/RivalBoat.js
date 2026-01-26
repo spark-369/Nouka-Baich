@@ -1,10 +1,13 @@
 "use client";
+import { useGame } from "../context/GameContext";
 
-export default function RivalBoat({ progress }) {
+export default function RivalBoat() {
+  const { aiProgress } = useGame();
+
   return (
     <div
-      className="absolute bottom-20 w-36 h-14"
-      style={{ left: `${50 + progress}px` }}
+      className="absolute bottom-20 w-36 h-14 mb-[7vh]"
+      style={{ left: `${aiProgress}px` }}
     >
       {/* Boat Body */}
       <div className="absolute inset-x-0 bottom-0 h-9 bg-gradient-to-r from-slate-700 via-gray-600 to-slate-500 rounded-b-full rounded-t-xl shadow-lg">
