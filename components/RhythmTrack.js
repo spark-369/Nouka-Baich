@@ -51,7 +51,9 @@ export default function RhythmTrack() {
   return (
     <div className="mt-4 text-center">
       <p className="font-bold">
-        {paused ? "Game Paused" : "Tap / Press SPACE on Drum Beat"}
+        {paused
+          ? "Game Paused"
+          : "Tap / Press SPACE Key on KeyBoard with Drum Beat"}
       </p>
     </div>
   );
