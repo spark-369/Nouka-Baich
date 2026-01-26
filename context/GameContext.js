@@ -11,7 +11,7 @@ const DIFFICULTY = {
 };
 
 export const GameProvider = ({ children }) => {
-  const [difficulty, setDifficulty] = useState("normal");
+  const [difficulty, setDifficulty] = useState("easy");
   const [started, setStarted] = useState(false);
   const [paused, setPaused] = useState(false);
   const [gameOver, setGameOver] = useState(false);
@@ -125,7 +125,11 @@ export const GameProvider = ({ children }) => {
     if (typeof window === "undefined") return;
 
     const board = JSON.parse(localStorage.getItem("leaderboard") || "[]");
-    board.push({ score: newScore, date: new Date().toLocaleString() });
+    board.push({
+      score: newScore,
+      difficulty,
+      date: new Date().toLocaleString(),
+    });
     board.sort((a, b) => b.score - a.score);
     localStorage.setItem("leaderboard", JSON.stringify(board.slice(0, 5)));
   };
