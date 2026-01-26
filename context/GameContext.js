@@ -36,7 +36,7 @@ export const GameProvider = ({ children }) => {
   const hitBeat = () => {
     if (paused || gameOver) return;
 
-    setSpeed((s) => Math.min(s + 0.2, 1100));
+    setSpeed((s) => Math.min(s + 0.7, 1100));
     setStamina((s) => Math.min(s + 8, 100));
     setCombo((c) => c + 1);
     setScore((sc) => sc + 10 + combo * 2);
