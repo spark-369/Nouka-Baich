@@ -5,9 +5,9 @@ const GameContext = createContext();
 export const useGame = () => useContext(GameContext);
 
 const DIFFICULTY = {
-  easy: { beat: 900, ai: 1.2 },
-  normal: { beat: 750, ai: 2.4 },
-  hard: { beat: 600, ai: 3.6 },
+  easy: { beat: 900, ai: 1 },
+  normal: { beat: 750, ai: 1.5 },
+  hard: { beat: 600, ai: 2 },
 };
 
 export const GameProvider = ({ children }) => {
