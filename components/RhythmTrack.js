@@ -53,7 +53,7 @@ export default function RhythmTrack() {
       <p className="font-bold">
         {paused
           ? "Game Paused"
-          : "Tap / Press SPACE Key on KeyBoard with Drum Beat"}
+          : "Frequently Tap / Press SPACEBAR Key In Perfect Bit Time"}
       </p>
     </div>
   );
